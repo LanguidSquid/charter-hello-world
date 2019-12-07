@@ -7,18 +7,18 @@ import lombok.Data;
 @Data
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class HelloWorldResponse {
+public class HelloWorldRequest {
     String message;
 
-    public String getMessage() {
+    public HelloWorldRequest(String message){
+        this.message = message;
+    }
+
+	public String getMessage() {
 		return message;
 	}
 
 	public void setMessage(String message) {
 		this.message = message;
 	}
-
-	public HelloWorldResponse(String message){
-        this.message = message;
-    }
 }
