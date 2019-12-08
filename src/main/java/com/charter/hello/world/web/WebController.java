@@ -24,7 +24,7 @@ public class WebController {
     }
     
     //Post request
-    @PostMapping(value = "/hello",
+    @PostMapping(path = "/hello",
             consumes = {"application/json"},
             produces = {"application/json"})
     @ResponseBody HelloWorldResponse create(@RequestBody HelloWorldRequest request){
