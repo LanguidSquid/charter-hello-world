@@ -8,7 +8,7 @@ import lombok.Data;
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class HelloWorldResponse {
-    String message;
+    private String message;
 
     public HelloWorldResponse(String message){
         this.message = message;
